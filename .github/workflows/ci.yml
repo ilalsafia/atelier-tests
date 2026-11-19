@@ -37,3 +37,5 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run test:int
+        env:
+          DATABASE_URL: postgres://test:test@localhost:5432/testdb
